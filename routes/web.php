@@ -16,3 +16,12 @@
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
+
+//http://localhost/lumen/public/books
+$router->get('books', ['uses' => 'BookController@showAllBooks']);
+
+//http://localhost/lumen/public/2
+
+$router->get('books/{id}', ['uses' => 'BookController@showOneBooks']);
+
+
