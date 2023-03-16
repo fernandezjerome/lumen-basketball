@@ -18,10 +18,10 @@ $router->get('/', function () use ($router) {
 });
 
 //http://localhost/lumen/public/books
-$router->get('books', ['uses' => 'BookController@showAllBooks']);
+$router->get('basketball', ['uses' => 'BasketballController@showAllStatement']);
 
 //http://localhost/lumen/public/2
 
-$router->get('books/{id}', ['uses' => 'BookController@showOneBooks']);
+$router->get('basketball/{id}', ['uses' => 'BasketballController@showOneStatement']);
 
 

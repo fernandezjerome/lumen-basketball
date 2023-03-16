@@ -4,12 +4,12 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Models\Book;
+use App\Models\Basketball;
 
-class BookController extends Controller
+class BasketballController extends Controller
 {
-    public function showAllBooks() {
-        return response()->json(Book::all());
+    public function showAllStatement() {
+        return response()->json(Basketball::all());
         //return response()->json(Book::join('authors', 'author_id', '=', 'authors.id')->get());
 
 
@@ -18,8 +18,8 @@ class BookController extends Controller
 
     }
 
-    public function showOneBooks($id) {
-        return response()->json(Book::find($id));
+    public function showOneStatement($id) {
+        return response()->json(Basketball::find($id));
     }
 
 }
