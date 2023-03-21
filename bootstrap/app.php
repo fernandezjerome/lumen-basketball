@@ -73,6 +73,11 @@ $app->configure('app');
 */
 
 // $app->middleware([
+//     \Barryvdh\Cors\HandleCors::class,
+// ]);
+
+
+// $app->middleware([
 //     App\Http\Middleware\ExampleMiddleware::class
 // ]);
 
