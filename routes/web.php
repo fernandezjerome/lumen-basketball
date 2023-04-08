@@ -26,11 +26,9 @@ $router->get('/', function () use ($router) {
     return $router->app->version();
 });
 
-//http://localhost/lumen/public/books
-$router->get('basketball', ['uses' => 'BasketballController@showAllStatement']);
+$router->get('plan', ['uses' => 'PlanController@showAllStatement']);
 
-//http://localhost/lumen/public/2
 
-$router->get('basketball/{id}', ['uses' => 'BasketballController@showOneStatement']);
+$router->get('plan/{id}', ['uses' => 'PlanController@showOneStatement']);
 
 
