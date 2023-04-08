@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Mar 16, 2023 at 01:59 AM
+-- Generation Time: Apr 08, 2023 at 02:10 AM
 -- Server version: 5.7.24
 -- PHP Version: 8.0.1
 
@@ -24,10 +24,10 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `basketballs`
+-- Table structure for table `plans`
 --
 
-CREATE TABLE `basketballs` (
+CREATE TABLE `plans` (
   `id` int(10) UNSIGNED NOT NULL,
   `section` varchar(50) NOT NULL,
   `img` varchar(50) NOT NULL,
@@ -36,10 +36,10 @@ CREATE TABLE `basketballs` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `basketballs`
+-- Dumping data for table `plans`
 --
 
-INSERT INTO `basketballs` (`id`, `section`, `img`, `alt`, `info`) VALUES
+INSERT INTO `plans` (`id`, `section`, `img`, `alt`, `info`) VALUES
 (1, 'who', 'group-shot.jpg', 'group-shot', 'With the belief that sports should be a place where everyone feels valued, respected, and encouraged to reach their full potential, we have come together to launch a movement against bullying in basketballs.'),
 (2, 'mission', 'mission.jpg', 'mission', 'Our mission to empower the basketballs community to rise above bullying through respect, kindness, and inclusiveness. Creating a safe and supportive environment for all to reach their full potential.'),
 (3, 'vision', 'vission.jpg', 'vission', 'Our vision is to transform basketballs into a safe, inclusive, and empowering place for all. Inspiring everyone to reach their full potential and find joy in the game.');
@@ -49,9 +49,9 @@ INSERT INTO `basketballs` (`id`, `section`, `img`, `alt`, `info`) VALUES
 --
 
 --
--- Indexes for table `basketballs`
+-- Indexes for table `plans`
 --
-ALTER TABLE `basketballs`
+ALTER TABLE `plans`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -59,9 +59,9 @@ ALTER TABLE `basketballs`
 --
 
 --
--- AUTO_INCREMENT for table `basketballs`
+-- AUTO_INCREMENT for table `plans`
 --
-ALTER TABLE `basketballs`
+ALTER TABLE `plans`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
